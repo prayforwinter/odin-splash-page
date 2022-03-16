@@ -13,3 +13,4 @@
    d. section 2
    e. section 3
    f. footer
+6 Alter structure. To be determined here.
