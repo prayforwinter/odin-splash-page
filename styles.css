@@ -1,0 +1,52 @@
+:root {
+  --nav-color: #1F2937;
+  --main-text-color: #F9FAF8;
+  --secondary-text-color: #E5E7EB ;
+  --button-color: #3882f6;
+  --info-text: #1f2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: var(--nav-color);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  /* justify-content: space-between; */
+}
+/* .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+} */
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100%; */
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* .flex-container {
+  display: flex;
+  flex-direction: column;
+} */
+
