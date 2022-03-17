@@ -17,7 +17,6 @@
 }
 body {
   font-family: 'Roboto', monospace;
-  /* background-color: var(--main-color); */
 }
 
 a {
@@ -61,7 +60,7 @@ ul {
 .navbar .container {
   display: flex;
   background-color: var(--main-color);
-  color: white;
+  color: #fff;
   justify-content: space-between;
   align-items: center;
   height: 100%;
@@ -83,6 +82,8 @@ ul {
   text-decoration: none;
   border-bottom: #E5E7EB 2px solid;
 }
+
+
 
 .logo {
   font-size: 32px;
@@ -121,8 +122,6 @@ img {
   max-width: 100%;
 }
 
-
-
 .header .container h1 {
   font-size: 48px;
   font-weight: 800;
@@ -144,6 +143,10 @@ img {
   border-radius: 5%;
   /* margin-left: px; */
 }
+
+main {
+  background-color: #f4f4f4;
+}
 .icons {
   background-color: #f4f4f4;
 }
@@ -161,14 +164,82 @@ img {
   padding: 20px;
 }
 
-/* .icon-title {
+.icon-title {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding-top: 50px;
-} */
+  padding: 25px 0px;
+  color: var(--main-color);
+  font-size: 36px;
+}
 
 .flex-items img {
   border-radius: 4%;
 }
 
+.quote {
+  background-color: var(--secondary-text-color);
+  font-size: 36px;
+  font-style: italic;
+  
+}
+
+.quote .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'shadows into light', sans-serif;
+}
+
+.quote .container p::before {
+  /* content: "\201C"; */
+  /*Font*/
+  /* font-family: 'shadows into light', serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999; */
+  
+  /*Positioning*/
+  /* position: absolute; */
+  /* left: 10px;
+  top:5px; */
+}
+
+.quote .container p::after {
+  /* content: "\201C"; */
+  /*Font*/
+  /* font-family: 'shadows into light', serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #999; */
+  
+  /*Positioning*/
+  /* position: absolute; */
+  /* left: 8px;
+  top:5px; */
+}
+
+/* blockquote {
+  background: var(--secondary-text-color);
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+} */
+
+.quote .by-line {
+  
+}
