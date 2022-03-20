@@ -1,0 +1,25 @@
+.btn {
+  background-image: linear-gradient(var(--button-color), #0c63d4);
+  border-radius: 5px;
+  border: 1px solid #0077cc;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.btn-outline {
+  border-radius: .3125rem;
+  border: 1px #fff solid;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#51a9ee, #147bcd);
+  border-color: #1482d0;
+  text-decoration: none;
+}

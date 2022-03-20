@@ -30,32 +30,6 @@ ul {
   list-style-type: none;
 }
 
-.btn {
-  background-image: linear-gradient(var(--button-color), #0c63d4);
-  border-radius: 5px;
-  border: 1px solid #0077cc;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 30px;
-}
-
-.btn-outline {
-  border-radius: .3125rem;
-  border: 1px #fff solid;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 30px;
-}
-
-.btn:hover {
-  background-image: linear-gradient(#51a9ee, #147bcd);
-  border-color: #1482d0;
-  text-decoration: none;
-}
-
 .navbar {
   background-color: var(--main-color);
   /* padding-bottom: 100px */
@@ -95,6 +69,7 @@ ul {
   border-bottom: #e5e7eb 2px solid;
 }
 
+/*==== End of Navbar ====*/
 .logo {
   font-size: 32px;
   font-family: 'shadows into light';
@@ -104,7 +79,7 @@ ul {
 }
 
 .header {
-  min-height: 400px;
+  /* min-height: 400px; */
   background-color: var(--main-color);
   /* padding: 100px 0; */
 }
@@ -120,12 +95,19 @@ ul {
 .header-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .header h1 {
   font-family: 'Homemade Apple', sans-serif;
   font-weight: 300;
 }
+
+/* .header-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
 
 img {
   max-width: 100%;
@@ -141,7 +123,7 @@ img {
   font-size: 18px;
   color: var(--secondary-text-color);
   /* max-width: 600px;  */
-  margin: 20px 0 25px;
+  /* margin: 20px 0 25px; */
 }
 
 .header .container img {
