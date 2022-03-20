@@ -155,14 +155,15 @@ main {
   border-radius: 4%;
 }
 
-.quote {
+.quote-section {
   background-color: var(--secondary-text-color);
   font-size: 2.25rem;
   font-style: italic;
-  padding: 6.25rem 0;
+  padding: 100px 0;
+  /* max-width: 50%; */
 }
 
-.quote .container {
+.quote-section .container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -170,38 +171,43 @@ main {
   justify-content: center;
 }
 
-.container .byline {
+
+
+.container .quote-byline {
   align-self: flex-end;
   display: flex;
   font-weight: 600;
+}
+
+.main-quote {
+  padding: 0 50px;
+}
+
+.quote-byline {
+  padding: 0 50px;
 }
 
 
 /*=============================================
 =            call to action            =
 =============================================*/
-
 .call-section {
   padding: 6.25rem 0;
 }
 
-.call-section .container {
+.call-group {
   align-content: center;
   background-color: var(--button-color);
   border-radius: 25px;
   display: flex;
   flex-direction: row;
   flex: 0 1  auto;
-  padding: 6.25rem 6.25rem;
+  padding: 50px; 
 }
 
 .call-header {
   flex-grow: 1;
   padding-right: 3.125rem; 
-}
-
-.call-header h1 {
-  /* margin-bottom: 16px; */
 }
 
 .call-button {
