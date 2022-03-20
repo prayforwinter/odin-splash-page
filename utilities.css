@@ -16,7 +16,7 @@
 }
 
 .btn-outline {
-  border-radius: .3125rem;
+  border-radius: 5px;
   border: 1px #fff solid;
   color: #fff;
   cursor: pointer;
@@ -27,5 +27,12 @@
 .btn:hover {
   background-image: linear-gradient(#51a9ee, #147bcd);
   border-color: #1482d0;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-image: linear-gradient(#d4e2ec, #9eadb4);
+  border-color: #dadee0;
+  color: #333;
   text-decoration: none;
 }
