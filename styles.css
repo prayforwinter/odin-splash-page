@@ -37,8 +37,9 @@ ul {
 
 .navbar {
   background-color: var(--main-color);
-  /* padding-bottom: 100px */
+  padding-bottom: 100px
   /* height: 60px; */
+
 }
 
 .navbar .container {
@@ -104,11 +105,9 @@ ul {
   font-weight: 300;
 }
 
-/* .header-button {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-} */
+.header-button {
+  align-self: flex-start;
+}
 
 img {
   max-width: 100%;
