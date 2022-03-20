@@ -37,44 +37,38 @@ ul {
 
 .navbar {
   background-color: var(--main-color);
-  padding-bottom: 100px
-  /* height: 60px; */
-
+  padding-bottom: 100px;
 }
 
 .navbar .container {
-  display: flex;
-  color: #fff;
-  justify-content: space-between;
   align-items: center;
+  color: #fff;
+  display: flex;
   height: 100%;
+  justify-content: space-between;
 }
 
 .logo {
-  font-size: 32px;
-  font-family: 'shadows into light';
-  letter-spacing: .1rem;
-  /* font-style: italic; */
+  font-family: 'Shadows Into Light';
+  font-size: 2rem;
   font-weight: 600;
 }
 
 .navbar ul {
-  list-style-type: none;
   display: flex;
-  gap: 40px;
-  /* margin-right: 11px; */
+  gap: 2.5rem;
+  list-style-type: none;
 }
 
 .navbar a {
   color: #fff;
   text-decoration: none;
-  /* margin-right:15px; */
 }
 
 .navbar a:hover {
+  border-bottom: #e5e7eb .125rem solid;
   color: #e1e1e1;
   text-decoration: none;
-  border-bottom: #e5e7eb 2px solid;
 }
 /*=====  End of navbar  ======*/
 
@@ -114,21 +108,19 @@ img {
 }
 
 .header .container h1 {
-  font-size: 48px;
-  font-weight: 800;
   color: var(--main-text-color);
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 .header .container p {
-  font-size: 18px;
   color: var(--secondary-text-color);
-  /* max-width: 600px;  */
-  /* margin: 20px 0 25px; */
+  font-size: 1.125rem;
 }
 
 .header .container img {
-  max-width: 400px;
   border-radius: 5%;
+  max-width: 25rem;
 }
 
 main {
@@ -137,26 +129,26 @@ main {
 
 .cards {
   background-color: #f4f4f4;
-  padding: 100px 0;
+  padding: 6.25rem 0;
 }
 
 .flex-items {
+  align-content: center;
   display: flex;
   justify-content: center;
   text-align: center;
-  align-content: center;
 }
 
 .flex-items > div {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .icon-title {
-  display: flex;
-  justify-content: center;
   align-content: center;
   color: var(--main-color);
-  font-size: 36px;
+  display: flex;
+  font-size: 2.25rem;
+  justify-content: center;
 }
 
 .flex-items img {
@@ -165,17 +157,23 @@ main {
 
 .quote {
   background-color: var(--secondary-text-color);
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: italic;
-  padding: 100px 0;
+  padding: 6.25rem 0;
 }
 
 .quote .container {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
   font-family: 'shadows into light', sans-serif;
+  justify-content: center;
+}
+
+.container .byline {
+  align-self: flex-end;
+  display: flex;
+  font-weight: 600;
 }
 
 
@@ -184,33 +182,30 @@ main {
 =============================================*/
 
 .call-section {
-  padding: 100px 0;
+  padding: 6.25rem 0;
 }
 
 .call-section .container {
   align-content: center;
   background-color: var(--button-color);
+  border-radius: 25px;
   display: flex;
   flex-direction: row;
   flex: 0 1  auto;
-  /* justify-content: space-between; */
-  padding: 100px 100px;
-  border-radius: 1.5625rem;
+  padding: 6.25rem 6.25rem;
 }
 
 .call-header {
   flex-grow: 1;
-  padding-right: 50px; 
-
+  padding-right: 3.125rem; 
 }
 
 .call-header h1 {
-  /* margin-bottom: 1rem; */
+  /* margin-bottom: 16px; */
 }
 
 .call-button {
   flex-shrink: 0;
-  
 }
 
 /*=====  End of call to action  ======*/
@@ -223,22 +218,20 @@ main {
 
 .footer {
   background-color: var(--main-color);
-  padding: 50px;
-  /* height: 50px; */
+  padding: 3.125rem;
 }
 
 .footer .container {
-  display: flex;
-  height: 100%;
-  justify-content: center;
   align-content: center;
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 
-.container .byline {
-  font-weight: 600;
+.footer-text {
+  align-content: center;
+  color: var(--main-text-color);
   display: flex;
-  align-self: flex-end;
+  justify-content: center;
 }
 
 /*=====  End of footer  ======*/
