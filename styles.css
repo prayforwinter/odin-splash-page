@@ -132,14 +132,14 @@ main {
   padding: 6.25rem 0;
 }
 
-.flex-items {
+.cards-container {
   align-content: center;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
-.flex-items > div {
+.cards-container > div {
   padding: 1.25rem;
 }
 
@@ -151,7 +151,7 @@ main {
   justify-content: center;
 }
 
-.flex-items img {
+.cards-container img {
   border-radius: 4%;
 }
 
