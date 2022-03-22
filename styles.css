@@ -60,12 +60,15 @@ img {
 .navbar ul {
   display: flex;
   gap: 2.5rem;
+  /* padding-right: */
   list-style-type: none;
 }
 
 .navbar a {
   color: #fff;
   text-decoration: none;
+  /* padding-right: 25px; */
+  
 }
 
 .navbar a:hover {
@@ -259,3 +262,5 @@ main {
 }
 
 /*=====  End of footer  ======*/
+
+
