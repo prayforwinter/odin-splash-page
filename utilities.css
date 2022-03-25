@@ -39,8 +39,19 @@
 
 /* media */
 @media (max-width: 768px) {
+  .container {
+    /* max-width: 768px; */
+    padding: 0 15px;
+    margin: 0 auto;
+  }
   .navbar {
-    padding-bottom: 25px;
+    flex-direction: column;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* height: 120px; */
+    /* padding: 20px; */
   }
   
   .navbar .container {
@@ -48,7 +59,8 @@
   }
 
   .logo {
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
   }
 
   .nav {
@@ -64,18 +76,33 @@
     padding-top: 10px
   }
 
-  .header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  
+.header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.header-text, 
+.header-text h1{
+  align-self: center;
+}
+.header-button {
+  align-self: center;
+}
+
+
+  
 
   .cards .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
   }
 
   .icon-title {
@@ -86,17 +113,51 @@
     align-items: center;
     text-align: center;
   }
-
+  .cards {
+    padding: 25px;
+  }
   .cards-container {
+    flex-direction: column;
     
   }
 
-  .quote .container {
-    padding: 20px;
+  .main-quote {
+    flex-direction: column;
+    
+    
+  }
+  .byline {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .call-section .container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .call-group {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 0 50px;
   }
 
-  .quote-section .container {
-    
+  .call-header {
+    flex-direction: column;
+  }
+
+  .call-button {
+    flex-direction: column;
+  }
+  .footer {
+    padding: .8rem;
+  }
+  .footer .container {
+    /* padding: 1rem; */
   }
 }
 
