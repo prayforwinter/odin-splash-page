@@ -1,11 +1,5 @@
 @import 'utilities';
-
-$primary-color: #1f2937;
-$primary-text-color: #f9faf8;
-$secondary-text-color: #e5e7eb;
-$btn-color: #3882f6;
-$info-text-color: #1f2937;
-$call-color: #2882f6;
+@import 'variables';
 
 * {
   margin: 0;
@@ -15,6 +9,7 @@ $call-color: #2882f6;
 
 body {
   font-family: 'Roboto', monospace;
+  line-height: 1.4;
 }
 
 a {
@@ -28,7 +23,6 @@ ul {
 img {
   max-width: 100%;
 }
-
 
 /*=============================================
 =            navbar            =
@@ -45,7 +39,7 @@ img {
   }
   .navbar__list {
     &:hover {
-      border-bottom: #e5e7eb .125rem solid;
+      border-bottom: #e5e7eb 0.125rem solid;
       color: #e1e1e1;
       text-decoration: none;
     }
@@ -59,9 +53,7 @@ img {
   }
 }
 
-
 /*=====  End of navbar  ======*/
-
 
 /*=============================================
 =            Header            =
@@ -75,9 +67,55 @@ img {
 
   .header__text {
     display: flex;
-  flex-direction: column;
-  justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header__mainHeader {
+      color: $primary-text-color;
+      font-family: 'Homemade Apple', sans-serif;
+      font-size: 3rem;
+      // TODO: figure out if this is necessary
+      align-self: flex-start;
+    }
   }
 }
 
 /*=====  End of Header  ======*/
+
+
+/*=============================================
+=            Card Tile Section            =
+=============================================*/
+
+
+
+/*=====  End of Card Tile Section  ======*/
+
+
+/*=============================================
+=            Quote Section            =
+=============================================*/
+
+
+
+/*=====  End of Quote Section  ======*/
+
+
+/*=============================================
+=            Call Section            =
+=============================================*/
+
+
+
+/*=====  End of Call Section  ======*/
+
+
+/*=============================================
+=            Footer            =
+=============================================*/
+
+
+
+/*=====  End of Footer  ======*/
+

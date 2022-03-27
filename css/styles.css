@@ -5,7 +5,7 @@
 }
 
 .btn {
-  background-image: linear-gradient(var(--button-color), #0c63d4);
+  background-image: linear-gradient(#3882f6, #0c63d4);
   border-radius: 5px;
   border: 1px solid #0077cc;
   border: none;
@@ -42,6 +42,7 @@
 
 body {
   font-family: "Roboto", monospace;
+  line-height: 1.4;
 }
 
 a {
@@ -96,6 +97,29 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.site__container .header__container .header__text .header__mainHeader {
+  color: #f9faf8;
+  font-family: "Homemade Apple", sans-serif;
+  font-size: 3rem;
+  align-self: flex-start;
 }
 
 /*=====  End of Header  ======*/
+/*=============================================
+=            Card Tile Section            =
+=============================================*/
+/*=====  End of Card Tile Section  ======*/
+/*=============================================
+=            Quote Section            =
+=============================================*/
+/*=====  End of Quote Section  ======*/
+/*=============================================
+=            Call Section            =
+=============================================*/
+/*=====  End of Call Section  ======*/
+/*=============================================
+=            Footer            =
+=============================================*/
+/*=====  End of Footer  ======*/

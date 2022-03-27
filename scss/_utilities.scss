@@ -1,3 +1,5 @@
+@import 'variables';
+
 .site__container {
   max-width: 60rem;
   margin: 0 auto;
@@ -5,7 +7,7 @@
 }
 
 .btn {
-  background-image: linear-gradient(var(--button-color), #0c63d4);
+  background-image: linear-gradient($btn-color, #0c63d4);
   border-radius: 5px;
   border: 1px solid #0077cc;
   border: none;
