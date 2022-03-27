@@ -1,5 +1,5 @@
 .site__container {
-  max-width: 75rem;
+  max-width: 60rem;
   margin: 0 auto;
   padding: 0 100px;
 }
@@ -34,6 +34,11 @@
   text-decoration: none;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +70,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 25px 25px;
+  padding: 25px 50px 0;
 }
 .site__container .navbar__container ul {
   display: flex;
@@ -78,9 +83,6 @@ img {
 .navbar__logo {
   font-family: "Shadows Into Light", sans-serif;
   font-size: 32px;
-}
-.navbar__logo:hover {
-  animation: bounce 1s ease-in;
 }
 
 .nav__link {
@@ -100,15 +102,14 @@ img {
   background-color: #1f2937;
   display: flex;
   justify-content: space-between;
-  gap: 50px;
-  padding: 25px 25px 25px;
+  gap: 60px;
+  padding: 50px 50px;
 }
 
 .header__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 10px;
 }
 
@@ -123,19 +124,34 @@ img {
   color: #f9faf8;
 }
 
+.header__img img {
+  border-radius: 10px;
+}
+
 /*=====  End of Header  ======*/
 /*=============================================
 =            Card Tile Section            =
 =============================================*/
+.tile__container {
+  padding: 40px 100px;
+}
+
 .tile__header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .tile__items {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+}
+.tile__items p {
+  text-align: center;
+}
+.tile__items img {
+  border-radius: 10px;
 }
 
 /*=====  End of Card Tile Section  ======*/
@@ -145,10 +161,16 @@ img {
 .quote__container {
   display: flex;
   flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 40px 125px;
+  font-size: 36px;
+  font-family: "Shadows into light";
 }
 
 .quote__byline {
   align-self: flex-end;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /*=====  End of Quote Section  ======*/
@@ -156,17 +178,32 @@ img {
 =            Call Section            =
 =============================================*/
 .call__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 50px 0px;
 }
-.call__container .call__item {
+
+.call__bubble {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  color: #f9faf8;
+  background-color: #3882f6;
+  flex-direction: row;
+  flex: 0 1 auto;
+  border-radius: 25px;
+  padding: 50px;
+  margin: 0 50px;
+  gap: 125px;
+}
+.call__bubble .call__item {
   display: flex;
   flex-direction: column;
 }
-.call__container .call__button {
-  display: flex;
-  align-items: center;
+.call__bubble .call__text {
+  flex-grow: 1;
+}
+.call__bubble .call__button {
+  flex-shrink: 0;
 }
 
 /*=====  End of Call Section  ======*/
@@ -176,23 +213,12 @@ img {
 .footer__container {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 25px 50px;
+  font-size: 0.8rem;
 }
 
 /*=====  End of Footer  ======*/
-.bounce-1 {
-  animation-name: bounce;
-  animation-timing-function: linear;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}

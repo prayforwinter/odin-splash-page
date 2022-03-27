@@ -34,7 +34,7 @@ img {
   justify-content: space-between;
   align-items: center;
   // height: 100%;
-  padding: 25px 25px 25px;
+  padding: 25px 50px 0;
   ul {
     display: flex;
     gap: 2.5rem;
@@ -48,19 +48,16 @@ img {
 .navbar__logo {
   font-family: 'Shadows Into Light', sans-serif;
   font-size: 32px;
-
-  &:hover {
-    animation: bounce 1s ease-in;
-  }
+ 
 }
 
 .nav__link {
   font-size: 14px;
   &:hover {
-      border-bottom: #e5e7eb 0.125rem solid;
-      color: #e1e1e1;
-      text-decoration: none;
-    }
+    border-bottom: #e5e7eb 0.125rem solid;
+    color: #e1e1e1;
+    text-decoration: none;
+  }
 }
 
 /*=====  End of navbar  ======*/
@@ -73,16 +70,14 @@ img {
   background-color: $primary-color;
   display: flex;
   justify-content: space-between;
-  gap: 50px;
-  padding: 25px 25px 25px;
-
+  gap: 60px;
+  padding: 50px 50px;
 }
 
 .header__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 10px;
 }
 
@@ -91,15 +86,18 @@ img {
   font-family: 'Homemade Apple', sans-serif;
   font-size: 3rem;
   // TODO: figure out if this is necessary
-  align-self: flex-start; 
+  align-self: flex-start;
 }
 
 .header__coreText {
   color: $primary-text-color;
 }
 
-/*=====  End of Header  ======*/
+.header__img img {
+  border-radius: 10px;
+}
 
+/*=====  End of Header  ======*/
 
 /*=============================================
 =            Card Tile Section            =
@@ -107,22 +105,28 @@ img {
 
 .tile__container {
   // display: flex;
+  padding: 40px 100px;
 }
 
 .tile__header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .tile__items {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  p {
+    text-align: center;
+  }
+  img {
+    border-radius: 10px;
+  }
 }
 
-
 /*=====  End of Card Tile Section  ======*/
-
 
 /*=============================================
 =            Quote Section            =
@@ -131,38 +135,62 @@ img {
 .quote__container {
   display: flex;
   flex-direction: column;
+  background-color: $secondary-text-color;
+  padding: 40px 125px;
+  font-size: 36px;
+  font-family: 'Shadows into light';
 }
 
 .quote__byline {
   align-self: flex-end;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /*=====  End of Quote Section  ======*/
-
 
 /*=============================================
 =            Call Section            =
 =============================================*/
 
 .call__container {
+  padding: 50px 0px;
+}
+.call__bubble {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  // color: $primary-text-color;
-
+  align-content: center;
+  color: $primary-text-color;
+  background-color: $btn-color;
+  flex-direction: row;
+  flex: 0 1 auto;
+  border-radius: 25px;
+  padding: 50px;
+  margin: 0 50px ;
+  gap: 125px;
+  // margin: 0 100px;
+  
   .call__item {
     display: flex;
     flex-direction: column;
+    // gap: 40px;
   }
 
+  .call__text {
+    flex-grow: 1;
+    p {
+    // margin-right: 100px;
+
+    }
+    // flex-direction: column;
+  }
   .call__button {
-    display: flex;
-    align-items: center;
+    flex-shrink: 0;
   }
 }
 
 /*=====  End of Call Section  ======*/
-
 
 /*=============================================
 =            Footer            =
@@ -171,18 +199,12 @@ img {
 .footer__container {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  background-color: $primary-color;
+  color: $primary-text-color;
+  padding: 25px 50px;
+  font-size: .80rem;
 }
 
 /*=====  End of Footer  ======*/
-
-.bounce-1 {
-  animation-name: bounce;
-  animation-timing-function: linear;
-}
-
-@keyframes bounce {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
