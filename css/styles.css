@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light:regular);
 @import url(https://fonts.googleapis.com/css?family=Homemade+Apple:regular);
-.container {
-  max-width: 1100px;
+.site__container {
+  max-width: 60rem;
   margin: 0 auto;
   padding: 0 100px;
 }
@@ -59,3 +59,35 @@ ul {
 img {
   max-width: 100%;
 }
+
+/*=============================================
+=            navbar            =
+=============================================*/
+.site__container .navbar__container {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.site__container .navbar__container .navbar__logo {
+  font-family: "Shadows Into Light", sans-serif;
+}
+.site__container .navbar__container .navbar__list:hover {
+  border-bottom: #e5e7eb 0.125rem solid;
+  color: #e1e1e1;
+  text-decoration: none;
+}
+.site__container .navbar__container ul {
+  display: flex;
+  gap: 2.5rem;
+}
+.site__container .navbar__container a {
+  color: #f9faf8;
+}
+
+/*=====  End of navbar  ======*/
+/*=============================================
+=            Header            =
+=============================================*/
+/*=====  End of Header  ======*/

@@ -34,3 +34,44 @@ img {
   max-width: 100%;
 }
 
+
+/*=============================================
+=            navbar            =
+=============================================*/
+
+.site__container .navbar__container {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  .navbar__logo {
+    font-family: 'Shadows Into Light', sans-serif;
+  }
+  .navbar__list {
+    &:hover {
+      border-bottom: #e5e7eb .125rem solid;
+      color: #e1e1e1;
+      text-decoration: none;
+    }
+  }
+  ul {
+    display: flex;
+    gap: 2.5rem;
+  }
+  a {
+    color: $primary-text-color;
+  }
+}
+
+
+/*=====  End of navbar  ======*/
+
+
+/*=============================================
+=            Header            =
+=============================================*/
+
+
+
+/*=====  End of Header  ======*/
