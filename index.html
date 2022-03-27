@@ -5,92 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Splash Page</title>
-    <!-- <link rel="stylesheet" href="css/main.css"/> -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="utilities.css" />
+    <link rel="stylesheet" href="css/styles.css"/>
+    <!-- <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="utilities.css" /> -->
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">bathtub & toaster</div>
-        <ul class="nav">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+    <nav class="nav">
+      <div class="navbar__container">
+        <div class="navbar__item navbar__logo">
+          <a href="index.html">bathtub & toaster</a>
+        </div>
+        <div class="navbar__item navbar__list">
+          <ul>
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">About</a></li>
+
+            <li><a href="#">Products</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <!-- header -->
-    <header class="header">
-      <div class="container">
-        <div class="header-text">
-          <h1>depressed?</h1>
-          <p>
-            There's hope. We call it running a bath & plugging in your favorite
-            toasting appliance & dropping it in alongside you. Go ahead. Spark
-            'er up. We'll wait.
-          </p>
-          <div class="header-button">
-            <a href="#signup" class="btn sign-up-button">Sign Up!</a>
-          </div>
-        </div>
 
-        <div class="header-img">
-          <img src="https://images.unsplash.com/photo-1492176273113-2d51f47b23b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="human-hand-reaching-out">
-          
+    <header>
+      <div class="site__container">
+        <div class="header__container">
+          <div class="header__item header__text">
+            <h1>depressed?</h1>
+
+            <p>
+              There's hope. We call it running a bath & plugging in your favorite
+              toasting appliance & dropping it in alongside you. Go ahead. Spark
+              'er up. We'll wait.
+            </p>
+
+            <a href="#" class="btn btn-solid">Learn More</a>
+          </div>
+
+          <div class="header__item header__img">
+            <img src="https://images.unsplash.com/photo-1492176273113-2d51f47b23b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="" />
+          </div>
         </div>
       </div>
     </header>
 
+   
     <!-- main -->
     <main>
       <!-- card section -->
       <section class="cards">
-        <div class="container">
-          <h1 class="icon-title">Some random information.</h1>
-          <div class="cards-container">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="puppy-running-in-grass"
-              />
-              <div>
-                <p>This can't be your dog if you're dead.</p>
-              </div>
+        <div class="site__container">
+          <div class="tile__container">
+            <div class="tile__header">
+              <h2>Here are some items</h2>
             </div>
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1558180678-ad8b95ffa810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="cameras-cctv-on-wall"
-              />
-              <div>
-                <p>This guy knows how you'll die.</p>
+
+            <div class="tile__items">
+              <div class="tile__item tile__01">
+                <img
+                  src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt=""
+                />
+
+                <p>No more dogs cuz you're dead now.</p>
               </div>
-            </div>
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1532926381893-7542290edf1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="clean-desk-with-plant-and-lamp"
-              />
-              <div>
-                <p>One last sip before the abyss.</p>
+
+              <div class="tile__item tile__02">
+                <img
+                  src="https://images.unsplash.com/photo-1558180678-ad8b95ffa810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt=""
+                />
+
+                <p>This guy know how you'll die.</p>
               </div>
-            </div>
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1518563259479-d003c05a6507?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="dark-country-road"
-              />
-              <div>
-                <p>Hope isn't around the corner.</p>
+
+              <div class="tile__item tile__03">
+                <img
+                  src="https://images.unsplash.com/photo-1532926381893-7542290edf1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt=""
+                />
+
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+
+              <div class="tile__item tile__04">
+                <img
+                  src="https://images.unsplash.com/photo-1518563259479-d003c05a6507?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt=""
+                />
+
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
           </div>
