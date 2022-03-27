@@ -34,6 +34,44 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .site__container {
+    padding: 0;
+  }
+
+  .site__container .navbar__container {
+    flex-direction: column;
+  }
+  .site__container .navbar__container .navbar__logo {
+    font-size: 28px;
+  }
+  .site__container .navbar__container .navbar__list {
+    visibility: hidden;
+  }
+
+  .site__container .header__container {
+    flex-direction: column;
+  }
+  .site__container .header__container .header__text {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .tile__items {
+    flex-direction: column;
+  }
+
+  .site__container .quote__container {
+    font-size: 24px;
+    padding: 50px 50px;
+  }
+  .site__container .quote__container .quote__byline {
+    font-size: 18px;
+  }
+  .site__container .quote__container .quote__byline .quote__role {
+    font-size: 12px;
+  }
+}
 @media screen and (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
@@ -171,6 +209,9 @@ img {
   align-self: flex-end;
   font-size: 24px;
   font-weight: 600;
+}
+.quote__byline .quote__role {
+  font-size: 18px;
 }
 
 /*=====  End of Quote Section  ======*/
