@@ -33,24 +33,34 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  .navbar__logo {
-    font-family: 'Shadows Into Light', sans-serif;
-  }
-  .navbar__list {
-    &:hover {
-      border-bottom: #e5e7eb 0.125rem solid;
-      color: #e1e1e1;
-      text-decoration: none;
-    }
-  }
+  // height: 100%;
+  padding: 25px 25px 25px;
   ul {
     display: flex;
     gap: 2.5rem;
   }
+
   a {
     color: $primary-text-color;
   }
+}
+
+.navbar__logo {
+  font-family: 'Shadows Into Light', sans-serif;
+  font-size: 32px;
+
+  &:hover {
+    animation: bounce 1s ease-in;
+  }
+}
+
+.nav__link {
+  font-size: 14px;
+  &:hover {
+      border-bottom: #e5e7eb 0.125rem solid;
+      color: #e1e1e1;
+      text-decoration: none;
+    }
 }
 
 /*=====  End of navbar  ======*/
@@ -64,21 +74,28 @@ img {
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  padding: 25px 25px 25px;
 
-  .header__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
 
-    .header__mainHeader {
-      color: $primary-text-color;
-      font-family: 'Homemade Apple', sans-serif;
-      font-size: 3rem;
-      // TODO: figure out if this is necessary
-      align-self: flex-start;
-    }
-  }
+.header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__mainHeader {
+  color: $primary-text-color;
+  font-family: 'Homemade Apple', sans-serif;
+  font-size: 3rem;
+  // TODO: figure out if this is necessary
+  align-self: flex-start; 
+}
+
+.header__coreText {
+  color: $primary-text-color;
 }
 
 /*=====  End of Header  ======*/
@@ -88,6 +105,20 @@ img {
 =            Card Tile Section            =
 =============================================*/
 
+.tile__container {
+  // display: flex;
+}
+
+.tile__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile__items {
+  display: flex;
+  gap: 1rem;
+}
 
 
 /*=====  End of Card Tile Section  ======*/
@@ -97,7 +128,14 @@ img {
 =            Quote Section            =
 =============================================*/
 
+.quote__container {
+  display: flex;
+  flex-direction: column;
+}
 
+.quote__byline {
+  align-self: flex-end;
+}
 
 /*=====  End of Quote Section  ======*/
 
@@ -106,7 +144,22 @@ img {
 =            Call Section            =
 =============================================*/
 
+.call__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // color: $primary-text-color;
 
+  .call__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .call__button {
+    display: flex;
+    align-items: center;
+  }
+}
 
 /*=====  End of Call Section  ======*/
 
@@ -115,7 +168,21 @@ img {
 =            Footer            =
 =============================================*/
 
-
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*=====  End of Footer  ======*/
 
+.bounce-1 {
+  animation-name: bounce;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}

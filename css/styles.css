@@ -1,5 +1,5 @@
 .site__container {
-  max-width: 60rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 0 100px;
 }
@@ -65,15 +65,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-}
-.site__container .navbar__container .navbar__logo {
-  font-family: "Shadows Into Light", sans-serif;
-}
-.site__container .navbar__container .navbar__list:hover {
-  border-bottom: #e5e7eb 0.125rem solid;
-  color: #e1e1e1;
-  text-decoration: none;
+  padding: 25px 25px 25px;
 }
 .site__container .navbar__container ul {
   display: flex;
@@ -81,6 +73,23 @@ img {
 }
 .site__container .navbar__container a {
   color: #f9faf8;
+}
+
+.navbar__logo {
+  font-family: "Shadows Into Light", sans-serif;
+  font-size: 32px;
+}
+.navbar__logo:hover {
+  animation: bounce 1s ease-in;
+}
+
+.nav__link {
+  font-size: 14px;
+}
+.nav__link:hover {
+  border-bottom: #e5e7eb 0.125rem solid;
+  color: #e1e1e1;
+  text-decoration: none;
 }
 
 /*=====  End of navbar  ======*/
@@ -92,34 +101,98 @@ img {
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  padding: 25px 25px 25px;
 }
-.site__container .header__container .header__text {
+
+.header__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
-.site__container .header__container .header__text .header__mainHeader {
+
+.header__mainHeader {
   color: #f9faf8;
   font-family: "Homemade Apple", sans-serif;
   font-size: 3rem;
   align-self: flex-start;
 }
 
+.header__coreText {
+  color: #f9faf8;
+}
+
 /*=====  End of Header  ======*/
 /*=============================================
 =            Card Tile Section            =
 =============================================*/
+.tile__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile__items {
+  display: flex;
+  gap: 1rem;
+}
+
 /*=====  End of Card Tile Section  ======*/
 /*=============================================
 =            Quote Section            =
 =============================================*/
+.quote__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote__byline {
+  align-self: flex-end;
+}
+
 /*=====  End of Quote Section  ======*/
 /*=============================================
 =            Call Section            =
 =============================================*/
+.call__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.call__container .call__item {
+  display: flex;
+  flex-direction: column;
+}
+.call__container .call__button {
+  display: flex;
+  align-items: center;
+}
+
 /*=====  End of Call Section  ======*/
 /*=============================================
 =            Footer            =
 =============================================*/
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*=====  End of Footer  ======*/
+.bounce-1 {
+  animation-name: bounce;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
