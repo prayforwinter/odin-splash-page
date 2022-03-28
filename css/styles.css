@@ -75,6 +75,7 @@
   .call__bubble {
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 12px;
   }
   .call__bubble .call__item {
     gap: 16px;
